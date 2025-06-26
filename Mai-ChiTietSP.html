@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Molly & Baby Tabby Series-Pinch Pendant Blind Box - POP MART</title>
+    <link rel="stylesheet" href="Mai-ChiTietSP.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="#">
+            <img src="images/logo.png" alt="POP MART" class="logo-img" />
+          </a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="nav-link">New & Featured</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">SERIES</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">MEGA</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">TYPES</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">ACCESSORIES</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Right Side Actions -->
+        <div class="header-actions">
+          <!-- Search -->
+          <div class="search-box">
+            <input type="text" placeholder="MEGA" class="search-input" />
+            <button class="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+
+          <!-- Language Selector -->
+          <div class="language-selector">
+            <img
+              src="https://flagcdn.com/w20/vn.png"
+              alt="VN"
+              class="flag-icon"
+            />
+            <span>VN</span>
+            <!-- <i class="fas fa-chevron-down"></i> -->
+          </div>
+
+          <!-- User Account -->
+          <div class="user-account">
+            <i class="fas fa-user"></i>
+            <span>Sign in / Register</span>
+          </div>
+
+          <!-- Wishlist -->
+          <div class="wishlist">
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <!-- Shopping Cart -->
+          <div class="shopping-cart">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-count">1</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Product Detail Section -->
+    <main class="product-detail">
+      <div class="container">
+        <div class="product-content">
+          <!-- Product Images -->
+          <div class="product-images">
+            <div class="image-thumbnails">
+              <div class="thumbnail active">
+                <img src="images/Charm1.jpg" alt="Thumbnail 1" onclick="changeMainImage(this.src)">
+              </div>
+              <div class="thumbnail">
+                <img src="images/Charm2.jpg" alt="Thumbnail 2" onclick="changeMainImage(this.src)">
+              </div>
+              <div class="thumbnail">
+                <img src="images/Charm3.jpg" alt="Thumbnail 3" onclick="changeMainImage(this.src)">
+              </div>
+              <div class="thumbnail">
+                <img src="images/Charm4.jpg" alt="Thumbnail 4" onclick="changeMainImage(this.src)">
+              </div>
+              <div class="thumbnail">
+                <img src="images/Charm5.jpg" alt="Thumbnail 5" onclick="changeMainImage(this.src)">
+              </div>
+            </div>
+            <div class="main-image">
+              <span class="badge new">NEW</span>
+              <img src="images/Charm1.jpg" alt="Baby Molly & Baby Tabby Series" id="mainImage">
+            </div>
+          </div>
+
+          <!-- Product Information -->
+          <div class="product-info">
+            <div class="wishlist-btn">
+              <i class="fas fa-heart"></i>
+            </div>
+            
+            <h1 class="product-title">Baby Molly & Baby Tabby Series-Pinch Pendant Blind Box</h1>
+            
+            <div class="product-price">
+              <span class="price">240.000 ₫</span>
+            </div>
+
+            <!-- Size Selection -->
+            <div class="size-section">
+              <h3>SIZE</h3>
+              <div class="size-options">
+                <div class="size-option active">
+                  <img src="images/Charm1.jpg" alt="Single Box">
+                  <span>Single Box</span>
+                </div>
+                <div class="size-option">
+                  <img src="images/Charm2.jpg" alt="Whole Set">
+                  <span>Whole Set</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quantity Selection -->
+            <div class="quantity-section">
+              <h3>Quantity</h3>
+              <div class="quantity-controls">
+                <button class="qty-btn minus" onclick="changeQuantity(-1)">-</button>
+                <input type="number" value="1" min="1" id="quantity" readonly>
+                <button class="qty-btn plus" onclick="changeQuantity(1)">+</button>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+              <button class="btn add-to-cart">ADD TO CART</button>
+              <button class="btn buy-now">BUY NOW</button>
+            </div>
+
+            <!-- Product Details -->
+            <div class="details-section">
+              <div class="details-header">
+                <h3>Details</h3>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="details-content open">
+                <div class="detail-item">
+                  <strong>Brand:</strong> POP MART
+                </div>
+                <div class="detail-item">
+                  <strong>Size:</strong> Height about 6.5cm
+                </div>
+                <div class="detail-item">
+                  <strong>Material:</strong> PVC/ABS
+                </div>
+                <div class="detail-item">
+                  <strong>Series:</strong> A whole set contains 6 blind boxes
+                </div>
+              </div>
+            </div>
+
+            <!-- Shipping & After-Sales Service -->
+            <div class="shipping-section">
+              <div class="shipping-header" onclick="toggleShipping()">
+                <h3>SHIPPING & AFTER - SALES SERVICE</h3>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="shipping-content">
+                <div class="shipping-item">
+                  <strong>1. Shipping:</strong>
+                  <div class="shipping-details">
+                    <p>Standard Shipping (15-30 working days)</p>
+                    <p>Expedited Shipping (3-7 working days)</p>
+                  </div>
+                </div>
+                <div class="shipping-item">
+                  <strong>2. Defects:</strong>
+                  <p>(1) Limited items don't have an exchange service. If you find a serious defect in the item, contact support@popmart.com, with the related order number and unpacking video of the figurine within seven(7) days of receipt product.</p>
+                </div>
+                <div class="shipping-item">
+                  <p>(2) For information security reasons, please contact us with the email address you used to place the order. You will be contacted by a Customer Support Representative who will assist you in resolving the issue.</p>
+                </div>
+                <div class="shipping-item">
+                  <p>(3) In order to avoid any disputes regarding refunds or exchanges, customers are encouraged to shoot video record themselves opening the package. A video recording must be completed no later than two days after delivery. A video should clearly show the shipping sheet, the package condition, and product defects.</p>
+                </div>
+                <div class="shipping-item">
+                  <strong>3. Tax fees:</strong>
+                  <p>For international express shipments, the buyer shall bear any Customs Duty costs.</p>
+                </div>
+                <div class="shipping-item">
+                  <strong>4.</strong> Due to special circumstances with the products, there might be occasions where items are out of stock.
+                </div>
+                <div class="shipping-item">
+                  <strong>5.</strong> In the event of stock shortages, the unavailable items will be automatically refunded, and the rest of your order will be dispatched as usual.
+                </div>
+                <div class="shipping-item">
+                  <strong>6. Notice:</strong> To ensure fast and safe delivery of this item, we will match the best logistics channel for you. Shipping fees will be automatically calculated at checkout page based on the weight, dimensions, and delivery distance of the product.
+                </div>
+                <div class="read-more">
+                  <a href="#" class="read-more-link">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Additional Links -->
+            <div class="additional-links">
+              <a href="#" class="link">View Product Details</a>
+              <a href="#" class="link">What's a blind box</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- You May Also Like Section -->
+    <section class="recommendations">
+      <div class="container">
+        <div class="recommendations-header">
+          <h2>YOU MAY ALSO LIKE</h2>
+          <div class="pagination-info">1/8</div>
+        </div>
+        
+        <div class="recommendations-content">
+          <button class="nav-btn prev" onclick="slideRecommendations('prev')">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          
+          <div class="recommendations-grid">
+            <div class="recommendation-item">
+              <div class="product-image">
+                <span class="badge out-of-stock">OUT OF STOCK</span>
+                <img src="images/Charm6.jpg" alt="Baby Molly & Baby Tabby Series Figure">
+              </div>
+              <div class="product-info">
+                <div class="brand">POP MART</div>
+                <h3 class="product-name">Baby Molly & Baby Tabby Series Figure</h3>
+                <div class="price">280.000 ₫</div>
+              </div>
+            </div>
+
+            <div class="recommendation-item">
+              <div class="product-image">
+                <img src="images/Charm7.jpg" alt="Baby Molly & Baby Tabby Series-Earrings">
+              </div>
+              <div class="product-info">
+                <div class="brand">POP MART</div>
+                <h3 class="product-name">Baby Molly & Baby Tabby Series-Earrings</h3>
+                <div class="price">300.000 ₫</div>
+              </div>
+            </div>
+
+            <div class="recommendation-item">
+              <div class="product-image">
+                <span class="badge new">NEW</span>
+                <img src="images/Charm8.jpg" alt="Baby Molly & Baby Tabby Series-Phone Case">
+              </div>
+              <div class="product-info">
+                <div class="brand">POP MART</div>
+                <h3 class="product-name">Baby Molly & Baby Tabby Series-Phone Case</h3>
+                <div class="price">380.000 ₫</div>
+              </div>
+            </div>
+
+            <div class="recommendation-item">
+              <div class="product-image">
+                <span class="badge out-of-stock">OUT OF STOCK</span>
+                <img src="images/Charm9.jpg" alt="Baby Molly x Pingu Happy Fishing Series">
+              </div>
+              <div class="product-info">
+                <div class="brand">POP MART</div>
+                <h3 class="product-name">Baby Molly x Pingu Happy Fishing Series</h3>
+                <div class="price">490.000 ₫</div>
+              </div>
+            </div>
+          </div>
+          
+          <button class="nav-btn next" onclick="slideRecommendations('next')">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Change main image when thumbnail is clicked
+      function changeMainImage(src) {
+        document.getElementById('mainImage').src = src;
+        
+        // Update active thumbnail
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        thumbnails.forEach(thumb => thumb.classList.remove('active'));
+        event.target.parentElement.classList.add('active');
+      }
+
+      // Change quantity
+      function changeQuantity(change) {
+        const quantityInput = document.getElementById('quantity');
+        let currentValue = parseInt(quantityInput.value);
+        let newValue = currentValue + change;
+        
+        if (newValue >= 1) {
+          quantityInput.value = newValue;
+        }
+      }
+
+      // Toggle details section
+      function toggleDetails() {
+        const content = document.querySelector('.details-content');
+        const icon = document.querySelector('.details-header i');
+        
+        content.classList.toggle('open');
+        icon.classList.toggle('fa-chevron-down');
+        icon.classList.toggle('fa-chevron-up');
+      }
+
+      // Toggle shipping section
+      function toggleShipping() {
+        const content = document.querySelector('.shipping-content');
+        const icon = document.querySelector('.shipping-header i');
+        
+        content.classList.toggle('open');
+        icon.classList.toggle('fa-chevron-down');
+        icon.classList.toggle('fa-chevron-up');
+      }
+
+      // Scroll thumbnails
+      function scrollThumbnails(direction) {
+        // Add thumbnail scrolling functionality if needed
+        console.log('Scroll thumbnails: ' + direction);
+      }
+
+      // Slide recommendations
+      function slideRecommendations(direction) {
+        const grid = document.querySelector('.recommendations-grid');
+        const scrollAmount = 300; // Adjust based on item width
+        
+        if (direction === 'next') {
+          grid.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        } else {
+          grid.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        }
+      }
+    </script>
+
+        <footer class="footer">
+        <!-- Social Media Section -->
+        <div class="footer-social">
+            <div class="container">
+                <h3>FOLLOW US ON</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Footer Content -->
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Join Community -->
+                    <div class="footer-column">
+                        <h4>JOIN THE COMMUNITY</h4>
+                        <p>Be the first to catch our new releases, exclusive offers, and more...</p>
+                        <div class="newsletter-signup">
+                            <input type="email" placeholder="Your email address" class="email-input">
+                            <button class="signup-btn">Sign Me Up</button>
+                        </div>
+                        
+                        <div class="contact-section">
+                            <h5>Contact Us</h5>
+                            <div class="contact-item">
+                                <h6>Chat</h6>
+                                <p>Monday - Friday 9:00 am - 18:00 pm CST</p>
+                                <a href="#" class="contact-link">Chat with us</a>
+                            </div>
+                            <div class="contact-item">
+                                <h6>Email</h6>
+                                <p>support@popmart.com</p>
+                                <a href="#" class="contact-link">Email us</a>
+                            </div>
+                            <a href="#" class="help-center-link">Visit Help Center (FAQs)</a>
+                        </div>
+
+                        <div class="country-language">
+                            <div class="country-selector">
+                                <img src="https://flagcdn.com/w20/vn.png" alt="VN" class="flag-icon">
+                                <span>VN</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Help -->
+                    <div class="footer-column">
+                        <h4>HELP</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Shipping Policy</a></li>
+                            <li><a href="#">Returns & Refunds</a></li>
+                            <li><a href="#">Track your order</a></li>
+                            <li><a href="#">POP BLOCKS after-sales...</a></li>
+                            <li><a href="#">Order Status</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Information -->
+                    <div class="footer-column">
+                        <h4>INFORMATION</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Store</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Investor Relations</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Global Ambassador</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Stamps Event</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Shop -->
+                    <div class="footer-column">
+                        <h4>SHOP</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">All Blind Box</a></li>
+                            <li><a href="#">All Figures</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
