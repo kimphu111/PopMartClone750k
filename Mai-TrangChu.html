@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POP MART - Trang Chủ</title>
+    <link rel="stylesheet" href="Mai-TrangChu.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="POP MART" class="logo-img">
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">New & Featured</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">SERIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">MEGA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">TYPES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">ACCESSORIES</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Right Side Actions -->
+            <div class="header-actions">
+                <!-- Search -->
+                <div class="search-box">
+                    <input type="text" placeholder="MEGA" class="search-input">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <!-- Language Selector -->
+                <div class="language-selector">
+                    <img src="https://flagcdn.com/w20/vn.png" alt="VN" class="flag-icon">
+                    <span>VN</span>
+                    <!-- <i class="fas fa-chevron-down"></i> -->
+                </div>
+
+                <!-- User Account -->
+                <div class="user-account">
+                    <i class="fas fa-user"></i>
+                    <span>Sign in / Register</span>
+                </div>
+
+                <!-- Wishlist -->
+                <div class="wishlist">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <!-- Shopping Cart -->
+                <div class="shopping-cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">1</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Slideshow -->
+    <section class="banner-slideshow">
+        <div class="slideshow-container">
+            <div class="slide active">
+                <img src="images/carousel1.png" alt="SKULLPANDA The Paradox Series">
+                <div class="slide-content">
+
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="images/carousel2.png" alt="Slide 2">
+                <div class="slide-content">
+
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="images/carousel3.png" alt="Slide 3">
+                <div class="slide-content">
+
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="images/carouse4.png" alt="Slide 4">
+                <div class="slide-content">
+
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="images/carousel6.png" alt="Slide 5">
+                <div class="slide-content">
+
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="images/carousel5.png" alt="Slide 6">
+                <div class="slide-content">
+
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="images/carousel7.png" alt="Slide 7">
+                <div class="slide-content">
+
+                </div>
+            </div>
+            
+            <!-- Navigation arrows -->
+            <button class="prev-btn" onclick="changeSlide(-1)">❮</button>
+            <button class="next-btn" onclick="changeSlide(1)">❯</button>
+            
+            <!-- Dot indicators -->
+            <div class="dots-container">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <h1>Chào mừng đến với POP MART</h1>
+            <p>Nội dung trang web sẽ được thêm vào đây...</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Social Media Section -->
+        <div class="footer-social">
+            <div class="container">
+                <h3>FOLLOW US ON</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Footer Content -->
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Join Community -->
+                    <div class="footer-column">
+                        <h4>JOIN THE COMMUNITY</h4>
+                        <p>Be the first to catch our new releases, exclusive offers, and more...</p>
+                        <div class="newsletter-signup">
+                            <input type="email" placeholder="Your email address" class="email-input">
+                            <button class="signup-btn">Sign Me Up</button>
+                        </div>
+                        
+                        <div class="contact-section">
+                            <h5>Contact Us</h5>
+                            <div class="contact-item">
+                                <h6>Chat</h6>
+                                <p>Monday - Friday 9:00 am - 18:00 pm CST</p>
+                                <a href="#" class="contact-link">Chat with us</a>
+                            </div>
+                            <div class="contact-item">
+                                <h6>Email</h6>
+                                <p>support@popmart.com</p>
+                                <a href="#" class="contact-link">Email us</a>
+                            </div>
+                            <a href="#" class="help-center-link">Visit Help Center (FAQs)</a>
+                        </div>
+
+                        <div class="country-language">
+                            <div class="country-selector">
+                                <img src="https://flagcdn.com/w20/vn.png" alt="VN" class="flag-icon">
+                                <span>VN</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Help -->
+                    <div class="footer-column">
+                        <h4>HELP</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Shipping Policy</a></li>
+                            <li><a href="#">Returns & Refunds</a></li>
+                            <li><a href="#">Track your order</a></li>
+                            <li><a href="#">POP BLOCKS after-sales...</a></li>
+                            <li><a href="#">Order Status</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Information -->
+                    <div class="footer-column">
+                        <h4>INFORMATION</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Store</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Investor Relations</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Global Ambassador</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Stamps Event</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Shop -->
+                    <div class="footer-column">
+                        <h4>SHOP</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">All Blind Box</a></li>
+                            <li><a href="#">All Figures</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        const totalSlides = slides.length;
+        let slideInterval;
+
+        // Function to show slide
+        function showSlide(index) {
+            // Hide all slides
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            // Show current slide
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+        }
+
+        // Function to go to next slide
+        function nextSlide() {
+            currentSlideIndex = (currentSlideIndex + 1) % totalSlides;
+            showSlide(currentSlideIndex);
+        }
+
+        // Function to go to previous slide
+        function prevSlide() {
+            currentSlideIndex = (currentSlideIndex - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlideIndex);
+        }
+
+        // Function for manual slide change
+        function changeSlide(direction) {
+            if (direction === 1) {
+                nextSlide();
+            } else {
+                prevSlide();
+            }
+            // Restart auto slide timer
+            resetAutoSlide();
+        }
+
+        // Function for dot navigation
+        function currentSlide(index) {
+            currentSlideIndex = index - 1;
+            showSlide(currentSlideIndex);
+            resetAutoSlide();
+        }
+
+        // Auto slide function
+        function startAutoSlide() {
+            slideInterval = setInterval(nextSlide, 7000); // 7 seconds
+        }
+
+        // Reset auto slide timer
+        function resetAutoSlide() {
+            clearInterval(slideInterval);
+            startAutoSlide();
+        }
+
+        // Initialize slideshow
+        document.addEventListener('DOMContentLoaded', function() {
+            showSlide(0);
+            startAutoSlide();
+        });
+
+        // Pause auto slide on hover
+        document.querySelector('.slideshow-container').addEventListener('mouseenter', function() {
+            clearInterval(slideInterval);
+        });
+
+        // Resume auto slide when not hovering
+        document.querySelector('.slideshow-container').addEventListener('mouseleave', function() {
+            startAutoSlide();
+        });
+    </script>
+</body>
+</html>
