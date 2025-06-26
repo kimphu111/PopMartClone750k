@@ -570,6 +570,10 @@ body {
 .view-more-container {
     text-align: center;
     margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .view-more-btn {
@@ -584,6 +588,7 @@ body {
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s ease;
+
 }
 
 .view-more-btn:hover {
