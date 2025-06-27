@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN IN OR REGISTER - POP MART</title>
+    <link rel="stylesheet" href="Hoan-TrangTaiKhoan.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="Mai-TrangChu.html">
+                    <img src="images/logo.png" alt="POP MART" class="logo-img">
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="Mai-SanPham.html" class="nav-link">New & Featured</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Mai-SanPham.html" class="nav-link">SERIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Mai-SanPham.html" class="nav-link">MEGA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Mai-SanPham.html" class="nav-link">TYPES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Mai-SanPham.html" class="nav-link">ACCESSORIES</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Right Side Actions -->
+            <div class="header-actions">
+                <!-- Search -->
+                <div class="search-box">
+                    <input type="text" placeholder="MEGA" class="search-input">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <!-- Language Selector -->
+                <div class="language-selector">
+                    <img src="https://flagcdn.com/w20/vn.png" alt="VN" class="flag-icon">
+                    <span>VN</span>
+                    <!-- <i class="fas fa-chevron-down"></i> -->
+                </div>
+
+                <!-- User Account -->
+                <div class="user-account">
+                    <a href="Hoan-TrangTaiKhoan.html">
+                        <i class="fas fa-user"></i>
+                        <span>Sign in / Register</span>
+                    </a>
+                </div>
+
+                <!-- Wishlist -->
+                <div class="wishlist">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <!-- Shopping Cart -->
+                <div class="shopping-cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">1</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="register-container">
+            <div class="register-form">
+                <h1>SIGN IN YOUR ACCOUNT</h1>
+
+                <form id="registerForm">
+                    <!-- Họ tên -->
+                    <div class="form-group">
+                        <input type="text" id="fullName" placeholder="Nhập họ và tên" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Enter your e-mail address" required>
+                    </div>
+
+                    <!-- Địa chỉ -->
+                    <div class="form-group">
+                        <input type="text" id="address" placeholder="Nhập địa chỉ" required>
+                    </div>
+
+                    <!-- Số điện thoại -->
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Nhập số điện thoại" required>
+                    </div>
+
+                    <!-- Continue Button -->
+                    <button type="submit" class="continue-btn">CONTINUE</button>
+                </form>
+
+                <!-- Social Login Section -->
+                <div class="social-section">
+                    <div class="divider">
+                        <span>— Join With —</span>
+                    </div>
+
+                    <div class="social-buttons">
+                        <a href="https://line.me" target="_blank">
+                            <button class="social-btn line">
+                                <img src="images/lineApp.png" alt="Line">
+                            </button>
+                        </a>
+                        <a href="https://google.com" target="_blank">
+                            <button class="social-btn google">
+                                <img src="images/ggApp.png" alt="Google">
+                            </button>
+                        </a>
+                        <a href="https://apple.com" target="_blank">
+                            <button class="social-btn apple">
+                                <img src="images/macApp.png" alt="Apple">
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Terms -->
+                <div class="terms">
+                    <p>By continuing, you agree to our <a href="#">Platform's Terms of Service</a> and <a
+                            href="#">Privacy Policy</a></p>
+                </div>
+            </div>
+    </main>
+
+
+
+        <!-- Footer -->
+    <footer class="footer">
+        <!-- Social Media Section -->
+        <div class="footer-social">
+            <div class="container">
+                <h3>FOLLOW US ON</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Footer Content -->
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Join Community -->
+                    <div class="footer-column">
+                        <h4>JOIN THE COMMUNITY</h4>
+                        <p>Be the first to catch our new releases, exclusive offers, and more...</p>
+                        <div class="newsletter-signup">
+                            <input type="email" placeholder="Your email address" class="email-input">
+                            <button class="signup-btn">Sign Me Up</button>
+                        </div>
+
+                        <div class="contact-section">
+                            <h5>Contact Us</h5>
+                            <div class="contact-item">
+                                <h6>Chat</h6>
+                                <p>Monday - Friday 9:00 am - 18:00 pm CST</p>
+                                <a href="#" class="contact-link">Chat with us</a>
+                            </div>
+                            <div class="contact-item">
+                                <h6>Email</h6>
+                                <p>support@popmart.com</p>
+                                <a href="#" class="contact-link">Email us</a>
+                            </div>
+                            <a href="#" class="help-center-link">Visit Help Center (FAQs)</a>
+                        </div>
+
+                        <div class="country-language">
+                            <div class="country-selector">
+                                <img src="https://flagcdn.com/w20/vn.png" alt="VN" class="flag-icon">
+                                <span>VN</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Help -->
+                    <div class="footer-column">
+                        <h4>HELP</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="Hoan-Term&Policy.html">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Shipping Policy</a></li>
+                            <li><a href="#">Returns & Refunds</a></li>
+                            <li><a href="#">Track your order</a></li>
+                            <li><a href="#">POP BLOCKS after-sales...</a></li>
+                            <li><a href="#">Order Status</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Information -->
+                    <div class="footer-column">
+                        <h4>INFORMATION</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Store</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Investor Relations</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Global Ambassador</a></li>
+                            <li><a href="Hoan-News.html">News</a></li>
+                            <li><a href="#">Stamps Event</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Shop -->
+                    <div class="footer-column">
+                        <h4>SHOP</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">All Blind Box</a></li>
+                            <li><a href="#">All Figures</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Popup -->
+    <div id="successPopup" class="popup-overlay">
+        <div class="popup-content">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Đăng ký thành công!</h2>
+            <p>Tài khoản của bạn đã được tạo thành công.</p>
+            <button id="goToHome" class="success-btn">Về trang chủ</button>
+        </div>
+    </div>
+
+    <script>
+        // Form submission handler
+        document.getElementById('registerForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form values
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const address = document.getElementById('address').value;
+            const phone = document.getElementById('phone').value;
+
+            // Basic validation
+            if (fullName && email && address && phone) {
+                // Show success popup
+                document.getElementById('successPopup').style.display = 'flex';
+            } else {
+                alert('Vui lòng điền đầy đủ thông tin!');
+            }
+        });
+
+        // Go to home page
+        document.getElementById('goToHome').addEventListener('click', function () {
+            window.location.href = 'Mai-TrangChu.html';
+        });
+
+        // Close popup when clicking outside
+        document.getElementById('successPopup').addEventListener('click', function (e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+                window.location.href = 'Mai-TrangChu.html';
+            }
+        });
+    </script>
+</body>
+
+</html>
