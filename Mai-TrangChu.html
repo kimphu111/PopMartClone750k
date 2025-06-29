@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POP MART - Trang Chủ</title>
+    <link rel="stylesheet" href="Mai-TrangChu.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="POP MART" class="logo-img">
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="Mai-SanPham.html" class="nav-link">New & Featured</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Mai-SanPham.html" class="nav-link">SERIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Mai-SanPham.html" class="nav-link">MEGA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Mai-SanPham.html" class="nav-link">TYPES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Mai-SanPham.html" class="nav-link">ACCESSORIES</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Right Side Actions -->
+            <div class="header-actions">
+                <!-- Search -->
+                <div class="search-box">
+                    <input type="text" placeholder="MEGA" class="search-input">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <!-- Language Selector -->
+                <div class="language-selector">
+                    <img src="https://flagcdn.com/w20/vn.png" alt="VN" class="flag-icon">
+                    <span>VN</span>
+                    <!-- <i class="fas fa-chevron-down"></i> -->
+                </div>
+
+                <!-- User Account -->
+            <div class="user-account">
+            <a href="Hoan-TrangTaiKhoan.html">
+              <i class="fas fa-user"></i>
+              <span>Sign in / Register</span>
+            </a>
+          </div>
+
+                <!-- Wishlist -->
+                <div class="wishlist">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <!-- Shopping Cart -->
+                <div class="shopping-cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">1</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Slideshow -->
+    <section class="banner-slideshow">
+        <div class="slideshow-container">
+
+            <div class="slide active" >
+                <img src="images/carousel1.png" alt="SKULLPANDA The Paradox Series">
+            </div>
+
+            <div class="slide">
+                <img src="images/carousel2.png" alt="Slide 2">
+            </div>
+
+            <div class="slide">
+                <img src="images/carousel3.png" alt="Slide 3">
+            </div>
+
+            <div class="slide">
+                <img src="images/carouse4.png" alt="Slide 4">
+            </div>
+
+            <div class="slide">
+                <img src="images/carousel6.png" alt="Slide 5">
+            </div>
+
+            <div class="slide">
+                <img src="images/carousel5.png" alt="Slide 6">
+            </div>
+
+            <div class="slide">
+                <img src="images/carousel7.png" alt="Slide 7">
+            </div>
+
+            <!-- Navigation arrows -->
+            <button class="prev-btn" onclick="changeSlide(-1)">❮</button>
+            <button class="next-btn" onclick="changeSlide(1)">❯</button>
+
+            <!-- Dot indicators -->
+            <div class="dots-container">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- New Arrivals Section -->
+        <section class="new-arrivals">
+            <div class="container">
+                <div class="section-header">
+                    <h2>NEW ARRIVALS</h2>
+                    <a href="Mai-SanPham.html"class="more-link">More ></a>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <a href="Mai-SanPham.html" class="product-link">
+                            <div class="product-image">
+                                <img src="images/product1.jpg" alt="SKULLPANDA The Paradox Series Figures">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-date">Jun 27 09:00</div>
+                                <h3 class="product-title">SKULLPANDA The Paradox Series Figures</h3>
+                                <div class="product-price">280.000 ₫</div>
+                                <button class="wishlist-btn">♡</button>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <a href="Mai-SanPham.html" class="product-link">
+                            <div class="product-image">
+                                <img src="images/product2.jpg" alt="Hirono Living Wild-Fight for Joy Plush Doll">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-date">Jun 27 09:00</div>
+                                <h3 class="product-title">Hirono Living Wild-Fight for Joy Plush Doll</h3>
+                                <div class="product-price">680.000 ₫</div>
+                                <button class="wishlist-btn">♡</button>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <a href="Mai-SanPham.html" class="product-link">
+                            <div class="product-image">
+                                <img src="images/product3.jpg" alt="SKULLPANDA The Paradox Series Cable">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-date">Jun 27 09:00</div>
+                                <h3 class="product-title">SKULLPANDA The Paradox Series Cable</h3>
+                                <div class="product-price">280.000 ₫</div>
+                                <button class="wishlist-btn">♡</button>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <a href="Mai-SanPham.html" class="product-link">
+                            <div class="product-image">
+                                <img src="images/product4.jpg" alt="POP BEAN Ice Cream Series Box Set">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-date">Jun 27 09:00</div>
+                                <h3 class="product-title">POP BEAN Ice Cream Series Box Set</h3>
+                                <div class="product-price">690.000 ₫</div>
+                                <button class="wishlist-btn">♡</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category Banners Section -->
+        <section class="category-banners">
+            <div class="container">
+                <div class="banners-grid">
+                    <!-- NEW Banner -->
+                    <div class="category-banner banner-new">
+                        <a href="Mai-SanPham.html" class="banner-link">
+                            <div class="banner-image">
+                                <img src="images/product5.jpg" alt="New Products">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="banner-column">
+                        <!-- FIGURINE Banner -->
+                        <div class="category-banner banner-figurine">
+                            <a href="Mai-SanPham.html" class="banner-link">
+                                <div class="banner-image">
+                                    <img src="images/product6.jpg" alt="Figurine Products">
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- MEGA Banner -->
+                        <div class="category-banner banner-mega">
+                            <a href="Mai-SanPham.html" class="banner-link">
+                                <div class="banner-image">
+                                    <img src="images/product7.jpg" alt="Mega Products">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banners-grid">
+                    <!-- NEW Banner -->
+                    <div class="category-banner banner-new">
+                        <a href="Mai-SanPham.html" class="banner-link">
+                            <div class="banner-image">
+                                <img src="images/product8.jpg" alt="New Products">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="banner-column">
+                        <!-- FIGURINE Banner -->
+                        <div class="category-banner banner-figurine">
+                            <a href="Mai-SanPham.html" class="banner-link">
+                                <div class="banner-image">
+                                    <img src="images/product9.jpg" alt="Figurine Products">
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- MEGA Banner -->
+                        <div class="category-banner banner-mega">
+                            <a href="Mai-SanPham.html" class="banner-link">
+                                <div class="banner-image">
+                                    <img src="images/product10.jpg" alt="Mega Products">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top Sellings Section -->
+        <section class="top-sellings">
+            <div class="container">
+                <div class="section-header">
+                    <h2>TOP SELLINGS</h2>
+                    <a href="Mai-SanPham.html" class="more-link">More ></a>
+                </div>
+
+                <div class="top-products-grid">
+                    <!-- Row 1 -->
+                    <div class="product-card">
+                        <a href="Mai-SanPham.html" class="product-link">
+                            <div class="product-image">
+                                <img src="images/ts1.jpg" alt="TOP MART">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">TOP MART</div>
+                                <h3 class="product-title">LABUBU Magical Fairytale Series Figures</h3>
+                                <div class="product-price">550.000 ₫</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-card">
+                        <a href="Mai-SanPham.html" class="product-link">
+                            <div class="product-image">
+                                <img src="images/ts2.jpg" alt="TOP MART">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">TOP MART</div>
+                                <h3 class="product-title">SKULLPANDA Adventures in The Woods Series</h3>
+                                <div class="product-price">290.000 ₫</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-card sale">
+                        <a href="Mai-SanPham.html" class="product-link">
+                            <div class="product-image">
+                                <div class="sale-badge">30%</div>
+                                <img src="images/ts3.jpg" alt="TOP MART">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">TOP MART</div>
+                                <h3 class="product-title">LABUBU Galaxy Time Machine Series</h3>
+                                <div class="product-price">450.000 ₫</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-card">
+                        <a href="Mai-SanPham.html" class="product-link">
+                            <div class="product-image">
+                                <img src="images/ts4.jpg" alt="TOP MART">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">TOP MART</div>
+                                <h3 class="product-title">LABUBU LIFE - One Piece Cosplay Series</h3>
+                                <div class="product-price">280.000 ₫</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="product-card">
+                        <a href="Mai-SanPham.html" class="product-link">
+                            <div class="product-image">
+                                <img src="images/ts5.jpg" alt="TOP MART">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">TOP MART</div>
+                                <h3 class="product-title">THE MONSTERS Classic Series "Plush Toy"</h3>
+                                <div class="product-price">420.000 ₫</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-card">
+                        <a href="Mai-SanPham.html" class="product-link">
+                            <div class="product-image">
+                                <img src="images/ts6.jpg" alt="TOP MART">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">TOP MART</div>
+                                <h3 class="product-title">Skull Panda Sweet Series Figures</h3>
+                                <div class="product-price">280.000 ₫</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-card sale">
+                        <a href="Mai-SanPham.html" class="product-link">
+                            <div class="product-image">
+                                <div class="sale-badge">30%</div>
+                                <img src="images/ts7.jpg" alt="TOP MART">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">TOP MART</div>
+                                <h3 class="product-title">Hirono Lolita Girl Set of 6 set Figures</h3>
+                                <div class="product-price">700.000 ₫</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-card">
+                        <a href="Mai-SanPham.html" class="product-link">
+                            <div class="product-image">
+                                <img src="images/ts8.jpg" alt="TOP MART">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">TOP MART</div>
+                                <h3 class="product-title">CRYBABY Mini Cow Series Shoulder Bag</h3>
+                                <div class="product-price">600.000 ₫</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="product-card sale">
+                        <a href="Mai-SanPham.html" class="product-link">
+                            <div class="product-image">
+                                <div class="sale-badge">30%</div>
+                                <img src="images/ts9.jpg" alt="TOP MART">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">TOP MART</div>
+                                <h3 class="product-title">Pucky Everyday Sees New Honey Figures</h3>
+                                <div class="product-price">350.000 ₫</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-card sale">
+                        <a href="Mai-SanPham.html" class="product-link">
+                            <div class="product-image">
+                                <div class="sale-badge">30%</div>
+                                <img src="images/ts10.jpg" alt="TOP MART">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">TOP MART</div>
+                                <h3 class="product-title">LABUBU x POP Life - Camping Playset</h3>
+                                <div class="product-price">350.000 ₫</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-card">
+                        <a href="Mai-SanPham.html" class="product-link">
+                            <div class="product-image">
+                                <img src="images/ts11.jpg" alt="TOP MART">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">TOP MART</div>
+                                <h3 class="product-title">Sweet Bean Strawberry Ice Cream Series Figures</h3>
+                                <div class="product-price">260.000 ₫</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-card">
+                        <a href="Mai-SanPham.html" class="product-link">
+                            <div class="product-image">
+                                <img src="images/ts12.jpg" alt="TOP MART">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">TOP MART</div>
+                                <h3 class="product-title">Gaby Panda & Teddy Rabbit Classic Photo Polo</h3>
+                                <div class="product-price">320.000 ₫</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Row 4 -->
+                    <div class="product-card">
+                        <a href="Mai-SanPham.html" class="product-link">
+                            <div class="product-image">
+                                <img src="images/ts13.jpg" alt="TOP MART">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">TOP MART</div>
+                                <h3 class="product-title">POP'S Adventure on Deep Sea Figures</h3>
+                                <div class="product-price">700.000 ₫</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-card">
+                        <a href="Mai-SanPham.html" class="product-link">
+                            <div class="product-image">
+                                <img src="images/ts14.jpg" alt="TOP MART">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">TOP MART</div>
+                                <h3 class="product-title">League of Legends: Arcane Series Figures</h3>
+                                <div class="product-price">670.000 ₫</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-card">
+                        <a href="Mai-SanPham.html" class="product-link">
+                            <div class="product-image">
+                                <img src="images/ts15.jpg" alt="TOP MART">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">TOP MART</div>
+                                <h3 class="product-title">LABUBU One Big Figure</h3>
+                                <div class="product-price">700.000 ₫</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-card">
+                        <a href="Mai-SanPham.html" class="product-link">
+                            <div class="product-image">
+                                <img src="images/ts16.jpg" alt="TOP MART">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">TOP MART</div>
+                                <h3 class="product-title">MOLLY x Labubu Series Figures</h3>
+                                <div class="product-price">260.000 ₫</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                    <div class="view-more-container">
+                        <a href="Mai-SanPham.html" class="view-more-btn">View More</a>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="video-section">
+            <div class="video-container">
+                <div class="video-header">
+                    <h2>THE MONSTERS Wacky Mart Series</h2>
+                </div>
+                <div class="video-wrapper">
+                    <video autoplay muted loop class="hero-video">
+                        <source src="images/videoHome.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-cta">
+                    <a href="Mai-SanPham.html" class="video-btn">SHOP NOW</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Social Media Section -->
+        <div class="footer-social">
+            <div class="container">
+                <h3>FOLLOW US ON</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Footer Content -->
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Join Community -->
+                    <div class="footer-column">
+                        <h4>JOIN THE COMMUNITY</h4>
+                        <p>Be the first to catch our new releases, exclusive offers, and more...</p>
+                        <div class="newsletter-signup">
+                            <input type="email" placeholder="Your email address" class="email-input">
+                            <button class="signup-btn">Sign Me Up</button>
+                        </div>
+
+                        <div class="contact-section">
+                            <h5>Contact Us</h5>
+                            <div class="contact-item">
+                                <h6>Chat</h6>
+                                <p>Monday - Friday 9:00 am - 18:00 pm CST</p>
+                                <a href="#" class="contact-link">Chat with us</a>
+                            </div>
+                            <div class="contact-item">
+                                <h6>Email</h6>
+                                <p>support@popmart.com</p>
+                                <a href="#" class="contact-link">Email us</a>
+                            </div>
+                            <a href="#" class="help-center-link">Visit Help Center (FAQs)</a>
+                        </div>
+
+                        <div class="country-language">
+                            <div class="country-selector">
+                                <img src="https://flagcdn.com/w20/vn.png" alt="VN" class="flag-icon">
+                                <span>VN</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Help -->
+                    <div class="footer-column">
+                        <h4>HELP</h4>
+                        <ul class="footer-links">
+                            <li><a href="Khoa-FAQ.html">FAQs</a></li>
+                            <li><a href="Hoan-Term&Policy.html">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Shipping Policy</a></li>
+                            <li><a href="#">Returns & Refunds</a></li>
+                            <li><a href="#">Track your order</a></li>
+                            <li><a href="#">POP BLOCKS after-sales...</a></li>
+                            <li><a href="#">Order Status</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Information -->
+                    <div class="footer-column">
+                        <h4>INFORMATION</h4>
+                        <ul class="footer-links">
+                            <li><a href="Khoa-AboutUs.html">About us</a></li>
+                            <li><a href="Hoan-News.html">News</a></li>
+                            <li><a href="Khoa-LienHe.html">Contact us</a></li>
+                            <li><a href="#">Store</a></li>
+                            <li><a href="#">Investor Relations</a></li>
+                            <li><a href="#">Global Ambassador</a></li>
+                            <li><a href="#">Stamps Event</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Shop -->
+                    <div class="footer-column">
+                        <h4>SHOP</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">All Blind Box</a></li>
+                            <li><a href="#">All Figures</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let currentSlideIndex = 0;  //slide hiện tại
+        const slides = document.querySelectorAll('.slide'); //lấy tat ca sllide
+        const dots = document.querySelectorAll('.dot'); //mnuts cham
+        const totalSlides = slides.length;
+        let slideInterval;
+
+        // Function to show slide
+        function showSlide(index) {
+            // Hide all slides
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            // Show current slide
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+        }
+
+        // Function to go to next slide
+        function nextSlide() {
+            currentSlideIndex = (currentSlideIndex + 1) % totalSlides;
+            showSlide(currentSlideIndex);
+        }
+
+        // Function to go to previous slide
+        function prevSlide() {
+            currentSlideIndex = (currentSlideIndex - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlideIndex);
+        }
+
+        // Function for manual slide change
+        function changeSlide(direction) {
+            if (direction === 1) {
+                nextSlide();
+            } else {
+                prevSlide();
+            }
+            // Restart auto slide timer
+            resetAutoSlide();
+        }
+
+        // Function for dot navigation
+        function currentSlide(index) {
+            currentSlideIndex = index - 1;
+            showSlide(currentSlideIndex);
+            resetAutoSlide();
+        }
+
+        // Auto slide function
+        function startAutoSlide() {
+            slideInterval = setInterval(nextSlide, 7000); // 7 seconds
+        }
+
+        // Reset auto slide timer
+        function resetAutoSlide() {
+            clearInterval(slideInterval);
+            startAutoSlide();
+        }
+
+        // Initialize slideshow
+        document.addEventListener('DOMContentLoaded', function () {
+            showSlide(0);
+            startAutoSlide();
+        });
+
+        // Pause auto slide on hover
+        document.querySelector('.slideshow-container').addEventListener('mouseenter', function () {
+            clearInterval(slideInterval);
+        });
+
+        // Resume auto slide when not hovering
+        document.querySelector('.slideshow-container').addEventListener('mouseleave', function () {
+            startAutoSlide();
+        });
+    </script>
+</body>
+
+</html>

@@ -1076,7 +1076,7 @@ body {
 
 .recommendations-grid {
     display: flex;
-    gap: 20px;
+    gap: 70px;
     overflow-x: auto;
     scroll-behavior: smooth;
     flex: 1;
